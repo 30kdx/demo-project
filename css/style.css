@@ -1,0 +1,287 @@
+body {
+overflow-x: hidden;
+}
+.bg-img {
+    position: fixed;
+    z-index: -5;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.button-top {
+    text-decoration: none;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ffb300;
+    padding: 5px;
+    transition: 0.3s all linear;
+}
+.button-top:hover {
+    transform: scale(1.1);
+}
+.container-fluid, .navbar {
+    background: #000000;
+    opacity: 90%;
+    box-shadow: 0px 5px 5px black;
+}
+.navbar {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+}
+.navbar-brand {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #ffb300;
+    font-size: 30px;
+}
+.logo-img {
+    height: 60px;
+}
+.nav-link:hover {
+    background: #ffb300;
+}
+.dropdown-item:hover {
+    background: #ffb300;
+}
+.btn {
+    display: flex;
+    border-radius: 0;
+    align-items: center;
+    font-weight: 700;
+}
+.btn,
+.form-control {
+    height: 30px;
+    font-size: 14px;
+    border: 2px solid #ffb300;
+}
+.btn:hover {
+    color: #000;
+    border-radius: 0;
+}
+.container {
+    padding: 70px 0;
+    justify-content: center;
+    background: #161616;
+}
+.navbar-toggler {
+    transition: 0.2s;
+}
+.navbar-toggler:active {
+    translate: -10px;
+}
+.menu-icon {
+    height: 38px;
+}
+.shopping-cart-text {
+    display: none;
+}
+.main-text {
+    padding-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+.container-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ffb300;
+}
+.timmer-date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    background: #ffb300;
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    word-spacing: 20px;
+}
+.second-text {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.bg-img-about {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    filter: brightness(40%);
+}
+.logo {
+    width: 300px;
+}
+.text-about {
+    width: 70%;
+    text-align: start;
+}
+.card {
+    background-color: #000000;
+    border: none;
+    color: #ffb300;
+    transition: 0.2s all linear;
+}
+.card:hover {
+    box-shadow: 0px 15px 20px #ffb300;
+}
+.card-body {
+    padding: 10px 20px;
+}
+.card-body .list-group-item{
+    padding: 0px 16px 8px 16px;
+}
+.card-img-top {
+    height: 170px;
+    object-fit: cover;
+}
+.list-group-item {
+    background: #000000;
+    color: #ffb300;
+    text-align: start;
+    border-bottom: 1px solid black;
+}
+.btn-cards {
+    background: #000;
+    color: #ffffff;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+}
+.sale-hedding {
+    background: #000;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffb300;
+    box-shadow: 0px 5px 10px #000;
+}
+.cardshop-box {
+    gap: 40px;
+}
+.footer-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background: #000;
+}
+.footer-items {
+    margin-right: 30px;
+}
+.footer-items:last-child {
+    margin-right: 0px;
+}
+.footer-link {
+    color: #ffb300;
+    transition: 0.2s all linear;
+}
+.footer-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.icon-contact {
+    width: 30px;
+    margin-right: 5px;
+}
+
+@media (max-width: 1440px) {
+    .second-text {
+        font-size: calc(100vw / 28);
+        }
+    .main-text {
+        font-size: calc(100vw / 5);
+    }
+    .timmer-date {
+        font-size: calc(100vw / 28);
+    }
+    .logo {
+        width: calc(100vw / 5);
+    }
+    .text-about {
+        width: 90%;
+    }
+    .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .shopping-cart-text {
+        display: inline;
+    }
+    .main-text {
+        font-size: calc(100vw / 4);
+    }
+    .button-top {
+        right: 20px;
+        bottom: 80px;
+    }
+    .footer-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px;
+    }
+    .footer-items {
+        margin-bottom: 10px;
+    }
+}
+@media (max-height: 680px) {
+    .text-about {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: calc(100vw / 3.5);
+    }
+    .timmer-date {
+        font-size: calc(100vw / 23);
+    }
+    .second-text {
+        font-size: calc(100vw / 25);
+    }
+    .text-about {
+        font-size: 14px;
+    }
+    .second-text {
+        font-size: calc(100vw / 18);
+    }
+    .card-title {
+        font-size: 16px;
+    }
+    .card-body {
+       font-size: 14px;
+    }
+}
+@media (max-width: 340px) {
+    .text-about {
+        font-size: 12px;
+    }
+}
